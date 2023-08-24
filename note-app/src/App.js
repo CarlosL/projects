@@ -1,6 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import Nav from './components/Nav';
+import Note from './components/Note';
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <Nav />
       <header className="App-header">
         <h1>Notes.app</h1>
+        <Note />
       </header>
     </div>
   );
