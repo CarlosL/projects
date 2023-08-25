@@ -1,8 +1,7 @@
 .note-form {
     padding: 10px;
-    margin-left: 40px;
     width: 240px;
-    height: 260px;
+    min-height: 160px;
     background-color: rgb(255, 234, 117);
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -10,15 +9,19 @@
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
-  }
-  
-  .note-form form {
-    margin: 4px;
-  }
+}
 
-  .note-form input, textarea {
+.drag-zone {
+  height: 10px;
+  width: 100%;
+  padding-top: -10px;
+  cursor: grab;
+}
+
+.note-form input, textarea {
     background-color: rgba(255, 255, 255, 0.205);
     border: none;
+    min-width: 210px;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
