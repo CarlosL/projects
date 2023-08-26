@@ -1,27 +1,26 @@
-.note-form {
-    padding: 10px;
-    width: 240px;
-    min-height: 160px;
-    background-color: rgb(255, 234, 117);
+.post-it {
+    padding: 0 10px;
+    min-width: 240px;
+    min-height: 80px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    position: absolute;
 }
 
-.drag-zone {
-  height: 10px;
-  width: 100%;
-  padding-top: -10px;
-  cursor: grab;
+.handle {
+    height: 10px;
+    cursor: grab;
 }
 
-.note-form input, textarea {
-    background-color: rgba(255, 255, 255, 0.205);
+.post-it textarea {
+    background-color: transparent;
     border: none;
-    min-width: 210px;
+    min-width: 220px;
+    resize: both;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -35,14 +34,19 @@
     -o-transition: .2s;
 }
 
-.note-form button {
+.post-it textarea::after, textarea:focus {
+    outline-style: none;
+}
+
+.options {
     border: none;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
+    float: right;
+    background-color: transparent;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
     transition: .2s;
     -webkit-transition: .2s;
     -moz-transition: .2s;
@@ -50,23 +54,29 @@
     -o-transition: .2s;
 }
 
-.note-form input::after, textarea::after,
-input:focus, textarea:focus {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    background-color: rgba(255, 255, 255, 0.6);
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.425);
-    outline-style: none;
+.options:hover {
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
 }
 
-.note-form button:hover {
-    background-color: white;
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
+ul {
+    list-style: none;
+}
+
+.post-it-color {
+    width: 20px;
+    height: 20px;
+    border: 0px solid black;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
