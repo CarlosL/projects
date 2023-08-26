@@ -29,7 +29,8 @@ function NotesForm() {
                 <div className="post-it" style={{ backgroundColor: color }}>
                     <div className="handle">
                         <button className="options" onClick={handleClose}><i className="bi bi-x"></i></button>
-                        <button className="options" onClick={toggleColorOptions}><i className="bi bi-gear"></i></button>
+                        <button className="options" onClick={toggleColorOptions}><i class="bi bi-palette"></i></button>
+                        <button className="options"><i class="bi bi-back"></i></button>
                         {showColorOptions && (
                             <ul>
                                 {colorOptions.map((option, index) => (
