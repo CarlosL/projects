@@ -80,3 +80,17 @@ ul {
     align-items: center;
     position: relative;
 }
+
+textarea::-webkit-scrollbar {
+    background-color: transparent;
+    width: 7px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}

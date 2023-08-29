@@ -7,7 +7,6 @@ function App() {
     <div className="App">
       <Nav />
       <section className="App-header">
-      <NotesForm />
       </section>
     </div>
   );
