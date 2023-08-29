@@ -16,6 +16,7 @@ function Nav() {
             Notes
           </a>
           <button onClick={generateForm} className="nav-button"><i className="bi bi-plus-circle-fill"></i></button>
+          <button className='nav-button'><i class="bi bi-person-circle"></i></button>
           <button className='nav-button gear-icon dropdown'><i className="bi bi-gear-fill"></i></button>
         </div>
       </nav>
